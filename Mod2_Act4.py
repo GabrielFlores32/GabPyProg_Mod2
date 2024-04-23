@@ -1,5 +1,8 @@
 #write a program that is like a diary
 #all off the output must be in a file named "mylife.txt"
 
-with open("mylife.txt", "w") as diary:
-    
+def input_lines():
+    while resume:
+        line = input("Enter line: ")
+        space = line + ("\n")
+        

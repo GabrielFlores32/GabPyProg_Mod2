@@ -1,21 +1,17 @@
-def read_students_gwa(file_name):
-    students = []
-    with open("students_gwa.txt", 'r') as f:
-        for line in f:
-            name, gwa = line.strip().split()
-            students.append((name, float(gwa)))
-    return students
+#create a file.txt that contains students name and gwa in a file.txt
+#the output must show the name of the student with the highest gwa together with its   
 
-def find_max_gwa(students):
-    max_gwa = max(s[1] for s in students)
-    max_gwa_students = [s for s in students if s[1] == max_gwa]
-    if len(max_gwa_students) == 1:
-        return max_gwa_students[0]
-    else:
-        max_gwa_students.sort(key=lambda x: x[0])
-        return max_gwa_students[-1]
-
-students = read_students_gwa('students.txt')
-max_gwa_student = find_max_gwa(students)
-
-print(f"The student with the highest GWA is {max_gwa_student[0]} with a GWA of {max_gwa_student[1]}")
+def find_highest_gwa():
+    with open("students_gwa.txt", "r") as grade_file:
+        data = grade_file.read()
+        students_list = eval(data)
+        highest_gwa = None
+        highest_gwa_student = None
+        for name, gwa in students_list.items():
+            float_value = float(gwa)
+            if highest_gwa is None or float_value < float(highest_gwa):
+                highest_gwa_student = name
+                highest_gwa = gwa
+        return highest_gwa_student, highest_gwa
+name, gwa = find_highest_gwa()
+print (f"{name} has the highest GWA with {gwa}")

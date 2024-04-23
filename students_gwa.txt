@@ -1,0 +1,23 @@
+{
+    "paul": "5.00",
+    "mark": "2.25",
+    "john": "2.00",
+    "ross": "2.25",
+    "reece": "2.50",
+    "jayvee": "3.00",
+    "kiepers": "2.00",
+    "jester": "2.75",
+    "daryl": "2.00",
+    "daiken": "2.50",
+    "edmharx": "2.75",
+    "steven": "2.50",
+    "renel": "2.00",
+    "angelo": "5.00",
+    "gabriel": "1.00",
+    "angela": "1.25",
+    "maw": "2.00",
+    "ronald": "5.00",
+    "hubert": "3.00",
+    "carl": "2.50",
+}
+

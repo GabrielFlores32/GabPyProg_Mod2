@@ -5,5 +5,8 @@ def input_lines():
     resume = True
     while resume:
         line = input("Enter line: ")
-        space = line + ("\n")
+        enter_line = line + ("\n")
+        with open("mylife.txt", "a") as mylife_file:
+            mylife_file.write(enter_line)
+            
         

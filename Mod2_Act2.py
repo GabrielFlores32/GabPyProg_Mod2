@@ -7,4 +7,4 @@ with open("numbers.txt", "r") as my_file, open("even.txt", "w") as even_file, op
             even_file.write(number)
         else:
             odd_file.write(number)
-            
+        
